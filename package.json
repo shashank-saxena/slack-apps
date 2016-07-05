@@ -1,13 +1,16 @@
 {
   "name": "timesheet-slack-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Slack apps",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shashank-saxena/slack-apps.git"
+  },
+  "author": "Shashank saxena",
+  "license": "MIT",
   "dependencies": {
     "botkit": "^0.2.2",
     "quickblox": "^2.1.2"
