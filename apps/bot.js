@@ -6,11 +6,18 @@ var controller = Botkit.slackbot({
 });
 
 var bot = controller.spawn({
-  token: process.env.slack_token
+  token: process.env.slack_token,
+  debug: true
 }).startRTM(function(err, bot, payload) {
+  console.log(process.env.PORT);
   if (err) {
     throw new Error('Could not connect to Slack');
   }
+});
+
+//prepare the webhook
+controller.setupWebserver(process.env.PORT || 3000, function(err, webserver) {
+  console.log(webserver);
 });
 
 // close the bot connection

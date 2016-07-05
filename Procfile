@@ -1,1 +1,1 @@
-web: node apps/bot.js
+web: npm start
